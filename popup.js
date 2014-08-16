@@ -12,7 +12,7 @@ function renderAnimeList () {
             content +='<li>' +
                         '<a href="#" class="remove">Remove</a>' +
                         '<a target="_blank" href="' + val.anime[i].url + '">' +
-                            '<p style="font-weight: bold;" >' + val.anime[i].name + '</p>' +
+                            '<p class="title">' + val.anime[i].name + '</p>' +
                             '<p>' +
                                 '<span>Episode ' + val.anime[i].episode + '</span>' + 
                                 '<span style="float:right; font-size: 12px;" >' + moment(date).fromNow() + '</span>' +
