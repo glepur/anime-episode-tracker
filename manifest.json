@@ -3,7 +3,7 @@
 
   "name": "Anime episode tracker",
   "description": "Track latest episodes of anime you are watching",
-  "version": "1.0",
+  "version": "1.01",
 
   "browser_action": {
     "default_icon": "icon.png",
