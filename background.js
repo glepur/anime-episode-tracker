@@ -19,6 +19,9 @@ chrome.tabs.onUpdated.addListener(function (tabId, changeInfo) {
 
 						var filtered = anime.filter(function (val) {
 							if (val.name == results[0][0]) {
+								if (+val.episode > +results[0][1]) {
+									return true;
+								}
 								val.url = tab.url;
 								val.episode = results[0][1];
 								val.timestamp = Date.now();
