@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Latest episodes</title>
+    <style>
+      body {
+        min-width: 400px;
+        overflow-x: hidden;
+        padding: 15px 10px 5px 10px;
+        background-color: #006666;
+        font: 14px "Courier New", Courier, monospace;
+      }
+      ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+      li {
+        position: relative;
+        background-color: #eee;
+        padding: 0;
+        margin: 0 0 10px 0;
+      }
+      li:hover {
+        background-color: #D6F9CB;
+      }
+      a {
+        display: block;
+        color: #000;
+        text-decoration: none;
+        padding: 1px 10px;
+      }
+      a:hover {
+        color: #000066;
+      }
+    </style>
+
+    <!--
+      - JavaScript and HTML must be in separate files: see our Content Security
+      - Policy documentation[1] for details and explanation.
+      -
+      - [1]: http://developer.chrome.com/extensions/contentSecurityPolicy.html
+     -->
+    <script src="moment.min.js"></script>
+    <script src="popup.js"></script>
+  </head>
+  <body>
+    <ul id="listing"></ul>
+  </body>
+</html>
+
